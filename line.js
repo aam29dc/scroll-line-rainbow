@@ -9,7 +9,7 @@ let line = document.getElementById('line');
 line.style.top = 0;
 
 document.addEventListener('scroll', function(){ 
-    let pos = getVerticalScrollPercentage(document.body);
+    let pos = (0.999) * getVerticalScrollPercentage(document.body);     // because if line is at 100% it isn't shown
     let [a,b,c] = [0,0,0];
 
     if(pos < 1/6){      //red -> yellow
