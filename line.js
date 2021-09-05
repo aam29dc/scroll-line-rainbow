@@ -5,8 +5,10 @@ function getVerticalScrollPercentage(elm){
     return (elm.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight);
 }
 
+let line = document.getElementById('line');
+
 document.addEventListener('scroll', function(){ 
-    let line = document.getElementById('line');
+
     let pos = getVerticalScrollPercentage(document.body);
     let [a,b,c] = [0,0,0];
 
