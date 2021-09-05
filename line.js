@@ -6,9 +6,9 @@ function getVerticalScrollPercentage(elm){
 }
 
 let line = document.getElementById('line');
+line.style.top = 0;
 
 document.addEventListener('scroll', function(){ 
-
     let pos = getVerticalScrollPercentage(document.body);
     let [a,b,c] = [0,0,0];
 
